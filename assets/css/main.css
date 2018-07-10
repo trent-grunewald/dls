@@ -3288,6 +3288,94 @@ body {
 
 		}
 
+		/* Footer */
+
+			#partners {
+				border-top: 5px solid red;
+				border-bottom: 5px solid red;
+				padding: 6em 0 6em 0;
+				background: #a5a1a1;
+				color: #aaa;
+				text-align: center;
+			}
+
+			#partners img{
+				height: 70px;
+			}
+
+				#partners a {
+					-moz-transition: color 0.2s ease-in-out;
+					-webkit-transition: color 0.2s ease-in-out;
+					-ms-transition: color 0.2s ease-in-out;
+					transition: color 0.2s ease-in-out;
+					color: #aaa;
+					text-decoration: none;
+				}
+
+					#partners a:active, #footer a:hover {
+						color: #ef0033;
+					}
+
+				#partners .icons {
+					font-size: 1.5em;
+				}
+
+					#partners .icons li {
+						padding-right: 2.5em;
+					}
+
+						#partners .icons li:last-child {
+							padding-right: 0;
+						}
+
+				#partners .copyright {
+					margin: 2em 0;
+					padding: 0;
+					text-align: center;
+				}
+
+					#partners .copyright li {
+						border-left: solid 1px rgba(144, 144, 144, 0.25);
+						display: inline-block;
+						list-style: none;
+						margin-left: 1.5em;
+						padding-left: 1.5em;
+					}
+
+						#partners .copyright li:first-child {
+							border-left: 0;
+							margin-left: 0;
+							padding-left: 0;
+						}
+
+				@media screen and (max-width: 980px) {
+
+					#partners {
+						padding: 6em 0 4em 0;
+					}
+
+				}
+
+				@media screen and (max-width: 736px) {
+
+					#partners {
+						padding: 3em 0 2em 0;
+					}
+
+						#partners .icons {
+							font-size: 1em;
+						}
+
+				}
+
+				@media screen and (max-width: 480px) {
+
+					#partners {
+						padding: 3em 0 1em 0;
+					}
+				}
+
+
 #madeIn{
 	display: block;
 	margin: 0 auto;
