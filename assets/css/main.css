@@ -1,6 +1,16 @@
 @import url(font-awesome.min.css);
 @import url(https://fonts.googleapis.com/css?family=Raleway:400,700);
 
+::selection{
+	background: #cf252d;
+	color: #fafafa;
+}
+
+::-moz-selection {/* Gecko Browsers */
+	background: #cf252d;
+	color: #fafafa;
+}
+
 /* Reset */
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
 		margin: 0;
@@ -20,7 +30,7 @@ body::-webkit-scrollbar-track {
 }
 
 body::-webkit-scrollbar-thumb {
-  background-color: #ef0033;
+  background-color: #cf252d;
   outline: 1px solid slategrey;
 	border-radius: 3px;
 }
@@ -1951,7 +1961,7 @@ body {
 		input[type="button"].special,
 		button.special,
 		.button.special {
-			background-color: #ef0033;
+			background-color: #cf252d;
 			color: #ffffff !important;
 		}
 
@@ -2738,17 +2748,14 @@ body {
 			width: 60em;
 		}
 
-		.wrapper.style1 {
-			border-top: 5px solid transparent;
-			border-image: linear-gradient(to left, transparent, transparent, #ef0202);
+		.border {
+			border-top: 7px solid transparent;
+			border-image: linear-gradient(to left, #cf252d, transparent, #cf252d);
 			border-image-slice: 1;
 		}
 
 		.wrapper.style2 {
 			background-color: #f6f6f6;
-			border-top: 5px solid transparent;
-			border-image: linear-gradient(to right, transparent, transparent, #ef0202);
-			border-image-slice: 1;
 		}
 
 		.wrapper.style3 {
@@ -2756,9 +2763,6 @@ body {
 			background-image: url("images/overlay.png"), url("../../images/banner.jpg");
 			background-position: center center;
 			background-size: cover;
-			border-top: 5px solid transparent;
-			border-image: linear-gradient(to right, transparent, transparent, #ef0202);
-			border-image-slice: 1;
 		}
 
 			.wrapper.style3 header.major {
@@ -3417,17 +3421,17 @@ body {
 }
 
 /* http://tobiasahlin.com/blog/css-trick-animating-link-underlines/ */
-/* .navli{
+	li a{
 	position: relative;
 	color: #000;
 	text-decoration: none;
 }
 
-.navli:hover{
+  li a:hover{
 	color: #000;
 }
 
-.navli::before{
+  li a:before{
 	content: "";
 	position: absolute;
 	width: 100%;
@@ -3440,4 +3444,10 @@ body {
   transform: scaleX(0);
   -webkit-transition: all 0.3s ease-in-out 0s;
   transition: all 0.3s ease-in-out 0s;
-} */
+}
+
+  li a:hover:before {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
