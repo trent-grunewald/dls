@@ -2821,16 +2821,21 @@ body {
 		z-index: 10001;
 	}
 
+		#header h1:before{
+			content: "\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0";
+		}
+
 		#header h1 {
 			color: #484848;
-			font-weight: 400;
-			height: inherit;
-			left: 1.25em;
-			line-height: inherit;
-			margin: 0;
-			padding: 0;
-			position: absolute;
-			top: 0;
+		font-weight: 400;
+		height: inherit;
+		left: 1.25em;
+		line-height: inherit;
+		margin: 0;
+		padding: 0;
+		position: absolute;
+		top: 0;
+		text-decoration: underline;
 		}
 
 		#header nav {
@@ -3385,4 +3390,54 @@ body {
 	height: 50px;
 	padding-right: 10px;
 	margin-bottom: -15px;
+	position: absolute;
+	left: 1.1em;
+	top: .3em;
 }
+@media screen and (max-width: 980px) {
+
+	#bull {
+		padding: 6em 0 4em 0;
+	}
+
+}
+
+@media screen and (max-width: 736px) {
+
+	#bull {
+		padding: 3em 0 2em 0;
+	}
+}
+
+@media screen and (max-width: 480px) {
+
+	#bull {
+		padding: 3em 0 1em 0;
+	}
+}
+
+/* http://tobiasahlin.com/blog/css-trick-animating-link-underlines/ */
+/* .navli{
+	position: relative;
+	color: #000;
+	text-decoration: none;
+}
+
+.navli:hover{
+	color: #000;
+}
+
+.navli::before{
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 2px;
+	bottom: 0;
+	left: 0;
+	background-color: #000;
+	visibility: hidden;
+	-webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+} */
