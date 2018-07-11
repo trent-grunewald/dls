@@ -3380,3 +3380,9 @@ body {
 	display: block;
 	margin: 0 auto;
 }
+
+#bull{
+	height: 50px;
+	padding-right: 10px;
+	margin-bottom: -15px;
+}
