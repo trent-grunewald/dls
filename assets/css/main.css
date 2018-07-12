@@ -3475,3 +3475,9 @@ body {
 .large{
 	font-size: 3em;
 }
+
+#background{
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
