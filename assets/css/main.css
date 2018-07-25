@@ -2765,7 +2765,7 @@ body {
 		}
 
 		.wrapper.style2 {
-			background-color: #cecece;
+			background-color: #ccc5c5;
 		}
 
 		.wrapper.style3 {
@@ -3487,4 +3487,14 @@ body {
 	color: #cf252d;
 	font-weight: 600;
 	letter-spacing: .05em;
+}
+
+.pic-container {
+	height: 35vh;
+	overflow-y: scroll;
+	overflow-x: hidden;
+}
+
+.container-pic{
+	margin-bottom: 4%;
 }
