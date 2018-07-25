@@ -3511,3 +3511,9 @@ border-radius: 3px;
 .container-pic{
 	margin-top: 4%;
 }
+
+.container-pic > img:hover {
+  width: 800px;
+  height: 400px;
+}
+
