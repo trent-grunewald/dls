@@ -1952,7 +1952,7 @@ body {
 			input[type="button"].alt.icon:before,
 			button.alt.icon:before,
 			.button.alt.icon:before {
-				color: #aaa;
+				color: #b5b5b5;
 			}
 
 		input[type="submit"].special,
@@ -2022,6 +2022,8 @@ body {
 				.feature-grid .feature .image img {
 					display: inline;
 					max-width: 100%;
+					width: 172px;
+					height: 174px;
 				}
 
 			.feature-grid .feature:nth-child(odd) .content, .feature-grid .feature:nth-child(odd) .image {
@@ -2261,27 +2263,27 @@ body {
 
 	::-webkit-input-placeholder {
 		opacity: 1.0;
-		color: #aaa !important;
+		color: #b5b5b5 !important;
 	}
 
 	:-moz-placeholder {
 		opacity: 1.0;
-		color: #aaa !important;
+		color: #b5b5b5 !important;
 	}
 
 	::-moz-placeholder {
 		opacity: 1.0;
-		color: #aaa !important;
+		color: #b5b5b5 !important;
 	}
 
 	:-ms-input-placeholder {
 		opacity: 1.0;
-		color: #aaa !important;
+		color: #b5b5b5 !important;
 	}
 
 	.formerize-placeholder {
 		opacity: 1.0;
-		color: #aaa !important;
+		color: #b5b5b5 !important;
 	}
 
 /* Icon */
@@ -2576,7 +2578,7 @@ body {
 	}
 
 	header p {
-		color: #aaa;
+		color: #b5b5b5;
 		position: relative;
 		margin: 0 0 1.5em 0;
 		text-transform: uppercase;
@@ -3183,7 +3185,7 @@ body {
 		}
 
 		#banner p {
-			color: #aaa;
+			color: #b5b5b5;
 			font-size: 1.5em;
 			margin-bottom: 1.75em;
 			text-transform: uppercase;
@@ -3255,7 +3257,7 @@ body {
 
 	#footer {
 		padding: 6em 0 1em 0;
-		background: #cecece;
+		background: #ccc5c5;
 		color: #484848;
 		text-align: center;
 	}
@@ -3346,8 +3348,8 @@ body {
 				border-top: 5px solid red;
 				border-bottom: 5px solid red;
 				padding: 6em 0 6em 0;
-				background: #cecece;
-				color: #aaa;
+				background: #ccc5c5;
+				color: #b5b5b5;
 				text-align: center;
 			}
 
@@ -3360,7 +3362,7 @@ body {
 					-webkit-transition: color 0.2s ease-in-out;
 					-ms-transition: color 0.2s ease-in-out;
 					transition: color 0.2s ease-in-out;
-					color: #aaa;
+					color: #b5b5b5;
 					text-decoration: none;
 				}
 
@@ -3493,6 +3495,8 @@ body {
 	height: 53vh;
 	overflow-y: scroll;
 	overflow-x: hidden;
+	border: 5px solid white;
+	border-radius: 5px 5px 0 0;
 }
 
 .pic-container::-webkit-scrollbar {
@@ -3516,4 +3520,8 @@ border-radius: 3px;
 .container-pic > img:hover {
   width: 800px;
   height: 400px;
+}
+
+h4 a{
+	color: #cf262e;
 }
