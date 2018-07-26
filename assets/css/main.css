@@ -3490,7 +3490,7 @@ body {
 }
 
 .pic-container {
-	height: 35vh;
+	height: 53vh;
 	overflow-y: scroll;
 	overflow-x: hidden;
 }
@@ -3517,4 +3517,3 @@ border-radius: 3px;
   width: 800px;
   height: 400px;
 }
-
