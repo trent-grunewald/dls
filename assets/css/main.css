@@ -3553,6 +3553,16 @@ h4 a{
     background-size: cover;
 	}
 
+	.contact{
+		background: url("images/overlay.png"), url("/assets/css/images/billy-matt.JPG")no-repeat center;
+    background-size: cover;
+	}
+
+	.projects{
+		background: url("images/overlay.png"), url("/images/banner.JPG")no-repeat center;
+    background-size: cover;
+	}
+
 	#table {
 		background: url(/images/dls.jpg) no-repeat;
     background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.89) 0%,rgba(255, 255, 255, 0.89) 100%), url(/images/dls.jpg);
