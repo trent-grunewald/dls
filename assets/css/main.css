@@ -1658,7 +1658,7 @@ body {
 
 	a {
 		text-decoration: underline;
-		color: #ef0033;
+		color: #cf262e;
 	}
 
 		a:hover {
@@ -2137,8 +2137,8 @@ body {
 		input[type="email"]:focus,
 		select:focus,
 		textarea:focus {
-			border-color: #ef0033;
-			box-shadow: 0 0 0 1px #ef0033;
+			border-color: #cf262e;
+			box-shadow: 0 0 0 1px #cf262e;
 		}
 
 	.select-wrapper {
@@ -2242,8 +2242,8 @@ body {
 		input[type="checkbox"]:checked + label:before,
 		input[type="radio"]:checked + label:before {
 			content: '\f00c';
-			background: #ef0033;
-			border-color: #ef0033;
+			background: #cf262e;
+			border-color: #cf262e;
 			color: #ffffff;
 		}
 
@@ -2757,12 +2757,12 @@ body {
 		}
 
 		.border {
-			border-top: 7px solid #cf252d;
+			border-top: 5px solid #cf252d;
 		}
 
 		.borderTB{
-			border-top: 7px solid #cf252d;
-			border-bottom: 7px solid #cf252d;
+			border-top: 5px solid #cf252d;
+			border-bottom: 5px solid #cf252d;
 		}
 
 		.wrapper.style2 {
@@ -2771,7 +2771,6 @@ body {
 
 		.wrapper.style3 {
 			background-attachment: fixed;
-			background-image: url("images/overlay.png"), url("../../images/banner.jpg");
 			background-position: center center;
 			background-size: cover;
 		}
@@ -3165,8 +3164,6 @@ body {
 	#banner {
 		padding: 16em 0 13em 0;
 		background-attachment: fixed;
-		background-image: url("images/overlay.png"), url("../../images/banner.jpg");
-		background-position: center top;
 		background-size: cover;
 		line-height: 1.75;
 		text-align: center;
@@ -3272,7 +3269,7 @@ body {
 		}
 
 			#footer a:active, #footer a:hover {
-				color: #ef0033;
+				color: #cf262e;
 			}
 
 		#footer .icons {
@@ -3367,7 +3364,7 @@ body {
 				}
 
 					#partners a:active, #footer a:hover {
-						color: #ef0033;
+						color: #cf262e;
 					}
 
 				#partners .icons {
@@ -3375,7 +3372,7 @@ body {
 				}
 
 					#partners .icons li {
-						padding-right: 2.5em;
+						padding-right: 1.5em;
 					}
 
 						#partners .icons li:last-child {
@@ -3524,4 +3521,41 @@ border-radius: 3px;
 
 h4 a{
 	color: #cf262e;
+}
+
+.machines{
+		background-attachment: fixed;
+		background-image: url("images/overlay.png"), url("/assets/css/images/machines-foot.jpg");
+		background-position: center center;
+		background-size: cover;
+	}
+
+	.items-head{
+		background:url("images/overlay.png"), url("/assets/css/images/items-head.jpg")
+	}
+
+	.items-foot{
+		background:url("images/overlay.png"), url("/assets/css/images/items-foot.jpg")
+	}
+
+	.about-head{
+		background: url("images/overlay.png"), url("/assets/css/images/about-head.jpg")no-repeat center;
+    background-size: cover;
+	}
+
+	.about-foot{
+    background: url("images/overlay.png"), url("/assets/css/images/about-foot.jpg")no-repeat fixed;
+    background-size: cover;
+}
+
+	.index{
+		background: url("images/overlay.png"), url("/assets/css/images/index.jpg")no-repeat center;
+    background-size: cover;
+	}
+
+	#table {
+		background: url(/images/dls.jpg) no-repeat;
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.89) 0%,rgba(255, 255, 255, 0.89) 100%), url(/images/dls.jpg);
+    background-position: center;
+    background-size: contain;
 }
