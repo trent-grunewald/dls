@@ -63,6 +63,17 @@
 							}
 						});
 
+						$(document).ready(function() {
+							//checks window size on window resize and applies correct class if navbar-collapse.
+							$( window ).resize(function() {
+									if ($(window).width() < 991) {
+									 $( '.navli' ).removeClass( "navli" ).addClass( "navli-mini" );
+								 } else if ($(window).width() > 991) {
+									 $( '.navli-mini' ).addClass( "navli" ).removeClass( 'navli-mini' );
+								 }
+							});
+						});
+
 			// Fix: Remove transitions on WP<10 (poor/buggy performance).
 				if (skel.vars.os == 'wp' && skel.vars.osVersion < 10)
 					$('#navPanel')
