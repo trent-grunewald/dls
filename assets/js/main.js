@@ -56,6 +56,13 @@
 						side: 'right'
 					});
 
+					//checks window size on load and applies the correct class for the collapsed nav underline.
+						$( window ).width(function() {
+							if ($(window).width() < 991) {
+								$('.navli').removeClass( "nav-item" ).addClass("navli-mini");
+							}
+						});
+
 			// Fix: Remove transitions on WP<10 (poor/buggy performance).
 				if (skel.vars.os == 'wp' && skel.vars.osVersion < 10)
 					$('#navPanel')

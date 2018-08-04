@@ -2918,6 +2918,14 @@ body {
 						color: #000;
 					}
 
+					@media screen and (max-width: 480px) {
+
+						.navli:hover {
+							color: rgb(211, 34, 34);
+						}
+	
+					}
+
 					  .navli:before{
 						content: "";
 						position: absolute;
@@ -2937,6 +2945,35 @@ body {
 					  visibility: visible;
 					  -webkit-transform: scaleX(1);
 					  transform: scaleX(1);
+					}
+
+					.navli-mini{
+						position: relative;
+						color: #582a1a;
+						-webkit-box-flex: 1;
+						-ms-flex: 1 1 auto;
+						flex: 1 1 auto;
+					}
+					
+					.navli-mini:before{
+						content: "";
+						position: absolute;
+						width: 8rem;
+						height: 2px;
+						bottom: .60em;
+						right: 1px;
+						background-color: #cf252d;
+						visibility: hidden;
+						-webkit-transform: scaleX(0);
+						transform: scaleX(0);
+						-webkit-transition: all 0.3s ease-in-out 0s;
+						transition: all 0.3s ease-in-out 0s;
+					}
+					
+					.navli-mini:hover:before {
+						visibility: visible;
+						-webkit-transform: scaleX(1);
+						transform: scaleX(1);
 					}
 /* ------------------------------------------------------------------------ */
 
@@ -3085,7 +3122,7 @@ body {
 					border-top: solid 1px #555;
 					color: #fff;
 					display: block;
-					padding: 0.75em 0;
+					padding: 1.2em 0;
 					text-decoration: none;
 				}
 
